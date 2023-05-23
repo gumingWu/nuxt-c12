@@ -38,6 +38,7 @@
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
+    "js": "node dist/index.mjs",
     "lint": "eslint .",
     "prepublishOnly": "nr build",
     "release": "bumpp && npm publish",
@@ -65,5 +66,12 @@
   },
   "lint-staged": {
     "*": "eslint --fix"
+  },
+  "dependencies": {
+    "c12": "^1.4.1"
+  },
+  "wu": {
+    "package": true,
+    "packageOnly": "xxx"
   }
 }
