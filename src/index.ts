@@ -14,13 +14,14 @@ import { loadConfig, loadDotenv, watchConfig } from 'c12'
     })
 
     console.log(config)
+    console.log(process.env)
 
-    const env = await loadDotenv({
-      cwd: '.',
-      fileName: '.env',
-    })
+    // const env = await loadDotenv({
+    //   cwd: '.',
+    //   fileName: '.env',
+    // })
 
-    console.log(env)
+    // console.log(env)
   }
 )()
 
